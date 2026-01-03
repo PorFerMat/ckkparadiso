@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌾</text></svg>">
+    <link rel="icon" type="image/x-icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌾</text></svg>">
 </head>
+
 <body>
-    <!-- Navigation (Same as index.html) -->
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
                 <span class="logo-icon">🌾</span>
                 <span class="logo-text">Verde<span class="gold">Gold</span></span>
             </a>
-            
+
             <div class="nav-menu">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About Us</a>
@@ -28,12 +33,8 @@
                 <a href="contact.html" class="nav-link">Contact</a>
                 <a href="press.html" class="nav-link active">Press</a>
             </div>
-            
+
             <div class="nav-actions">
-                <button class="cart-btn">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-count">0</span>
-                </button>
                 <button class="hamburger" id="hamburger">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -41,7 +42,7 @@
         </div>
     </nav>
 
-    <!-- Mobile Menu (Same as index.html) -->
+    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <a href="index.html" class="mobile-link">Home</a>
         <a href="about.html" class="mobile-link">About Us</a>
@@ -54,128 +55,152 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Press & Media</h1>
-            <p>Latest news, press releases, and media resources about VerdeGold.</p>
+            <h1 class="animate-on-scroll">Press & Media</h1>
+            <p class="animate-on-scroll" data-delay="200">Latest news, press releases, and media resources about
+                VerdeGold.</p>
         </div>
     </section>
 
     <!-- Press Content -->
     <section class="page-content">
         <div class="container">
-            <div class="content-card">
-                <h2>Press Releases</h2>
-                <p>Stay up to date with the latest news and announcements from VerdeGold.</p>
-                
+            <div class="content-card animate-on-scroll">
+                <h2 class="animate-fade-in">Press Releases</h2>
+                <p class="animate-fade-in" data-delay="100">Stay up to date with the latest news and announcements from
+                    VerdeGold.</p>
+
                 <div class="press-releases">
-                    <div class="press-release">
+                    <div class="press-release animate-slide-right" data-delay="100">
                         <div class="press-date">September 15, 2023</div>
                         <h3>VerdeGold Launches Carbon-Neutral Shipping Initiative</h3>
-                        <p>VerdeGold today announced its commitment to carbon-neutral shipping across all orders. The company has partnered with Climate Neutral to measure, offset, and reduce its carbon footprint, making it one of the first gourmet food brands to achieve this milestone.</p>
+                        <p>VerdeGold today announced its commitment to carbon-neutral shipping across all orders. The
+                            company has partnered with Climate Neutral to measure, offset, and reduce its carbon
+                            footprint, making it one of the first gourmet food brands to achieve this milestone.</p>
                         <a href="#" class="btn btn-outline" style="margin-top: 15px;">Read Full Release</a>
                     </div>
-                    
-                    <div class="press-release">
+
+                    <div class="press-release animate-slide-right" data-delay="200">
                         <div class="press-date">August 3, 2023</div>
                         <h3>New Tropical Dried Fruit Line Wins "Best New Product" Award</h3>
-                        <p>VerdeGold's new line of organic tropical dried fruits has been recognized with the "Best New Product" award at the 2023 Natural Products Expo. The judges praised the product's authentic flavor, sustainable packaging, and innovative dehydration process that preserves nutrients.</p>
+                        <p>VerdeGold's new line of organic tropical dried fruits has been recognized with the "Best New
+                            Product" award at the 2023 Natural Products Expo. The judges praised the product's authentic
+                            flavor, sustainable packaging, and innovative dehydration process that preserves nutrients.
+                        </p>
                         <a href="#" class="btn btn-outline" style="margin-top: 15px;">Read Full Release</a>
                     </div>
-                    
-                    <div class="press-release">
+
+                    <div class="press-release animate-slide-right" data-delay="300">
                         <div class="press-date">June 22, 2023</div>
                         <h3>VerdeGold Expands Partnership with Southeast Asian Rice Farmers</h3>
-                        <p>The company has announced an expanded partnership with a cooperative of 200 smallholder rice farmers in Thailand. The new 5-year agreement guarantees fair prices, provides agricultural training, and supports community development projects in the region.</p>
+                        <p>The company has announced an expanded partnership with a cooperative of 200 smallholder rice
+                            farmers in Thailand. The new 5-year agreement guarantees fair prices, provides agricultural
+                            training, and supports community development projects in the region.</p>
                         <a href="#" class="btn btn-outline" style="margin-top: 15px;">Read Full Release</a>
                     </div>
-                    
-                    <div class="press-release">
+
+                    <div class="press-release animate-slide-right" data-delay="400">
                         <div class="press-date">May 10, 2023</div>
                         <h3>Founder Maya Chen Named to "30 Under 30" Food & Drink List</h3>
-                        <p>VerdeGold co-founder Maya Chen has been recognized in Forbes' "30 Under 30" list for Food & Drink. The award acknowledges her leadership in building a sustainable gourmet food brand that has seen 300% growth over the past two years.</p>
+                        <p>VerdeGold co-founder Maya Chen has been recognized in Forbes' "30 Under 30" list for Food &
+                            Drink. The award acknowledges her leadership in building a sustainable gourmet food brand
+                            that has seen 300% growth over the past two years.</p>
                         <a href="#" class="btn btn-outline" style="margin-top: 15px;">Read Full Release</a>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Media Coverage -->
-            <div class="content-card">
-                <h2>Media Coverage</h2>
-                <p>See what leading publications are saying about VerdeGold.</p>
-                
+            <div class="content-card animate-on-scroll" data-delay="200">
+                <h2 class="animate-fade-in">Media Coverage</h2>
+                <p class="animate-fade-in" data-delay="100">See what leading publications are saying about VerdeGold.
+                </p>
+
                 <div class="values-grid" style="margin-top: 40px;">
-                    <div class="value-card">
+                    <div class="value-card animate-scale" data-delay="100">
                         <div class="value-icon" style="background-color: #f0f0f0; color: var(--primary-green);">
                             <i class="fas fa-newspaper"></i>
                         </div>
                         <h3 class="value-title">Food & Wine Magazine</h3>
-                        <p class="value-desc">"VerdeGold's Jasmine Rice is the secret ingredient that elevates every dish. The aromatic quality is unmatched in the market."</p>
-                        <a href="#" class="footer-link" style="display: inline-block; margin-top: 10px;">Read Article →</a>
+                        <p class="value-desc">"VerdeGold's Jasmine Rice is the secret ingredient that elevates every
+                            dish. The aromatic quality is unmatched in the market."</p>
+                        <a href="#" class="footer-link" style="display: inline-block; margin-top: 10px;">Read Article
+                            →</a>
                     </div>
-                    
-                    <div class="value-card">
+
+                    <div class="value-card animate-scale" data-delay="200">
                         <div class="value-icon" style="background-color: #f0f0f0; color: var(--primary-green);">
                             <i class="fas fa-tv"></i>
                         </div>
                         <h3 class="value-title">The Today Show</h3>
-                        <p class="value-desc">Featured as one of "5 Food Brands Changing the Game" with their sustainable practices and exceptional product quality.</p>
-                        <a href="#" class="footer-link" style="display: inline-block; margin-top: 10px;">Watch Segment →</a>
+                        <p class="value-desc">Featured as one of "5 Food Brands Changing the Game" with their
+                            sustainable practices and exceptional product quality.</p>
+                        <a href="#" class="footer-link" style="display: inline-block; margin-top: 10px;">Watch Segment
+                            →</a>
                     </div>
-                    
-                    <div class="value-card">
+
+                    <div class="value-card animate-scale" data-delay="300">
                         <div class="value-icon" style="background-color: #f0f0f0; color: var(--primary-green);">
                             <i class="fas fa-podcast"></i>
                         </div>
                         <h3 class="value-title">The Food Innovators Podcast</h3>
-                        <p class="value-desc">Co-founders discuss building a values-driven food brand that appeals to modern consumers.</p>
-                        <a href="#" class="footer-link" style="display: inline-block; margin-top: 10px;">Listen Now →</a>
+                        <p class="value-desc">Co-founders discuss building a values-driven food brand that appeals to
+                            modern consumers.</p>
+                        <a href="#" class="footer-link" style="display: inline-block; margin-top: 10px;">Listen Now
+                            →</a>
                     </div>
-                    
-                    <div class="value-card">
+
+                    <div class="value-card animate-scale" data-delay="400">
                         <div class="value-icon" style="background-color: #f0f0f0; color: var(--primary-green);">
                             <i class="fas fa-blog"></i>
                         </div>
                         <h3 class="value-title">Well+Good</h3>
-                        <p class="value-desc">"The Golden Turmeric Elixir is our new go-to wellness drink. It's delicious, anti-inflammatory, and actually works."</p>
-                        <a href="#" class="footer-link" style="display: inline-block; margin-top: 10px;">Read Review →</a>
+                        <p class="value-desc">"The Golden Turmeric Elixir is our new go-to wellness drink. It's
+                            delicious, anti-inflammatory, and actually works."</p>
+                        <a href="#" class="footer-link" style="display: inline-block; margin-top: 10px;">Read Review
+                            →</a>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Media Resources -->
-            <div class="content-card">
-                <h2>Media Resources</h2>
-                <p>Resources for journalists, bloggers, and content creators.</p>
-                
+            <div class="content-card animate-on-scroll" data-delay="300">
+                <h2 class="animate-fade-in">Media Resources</h2>
+                <p class="animate-fade-in" data-delay="100">Resources for journalists, bloggers, and content creators.
+                </p>
+
                 <div class="values-grid" style="margin-top: 40px;">
-                    <div class="value-card">
+                    <div class="value-card animate-scale" data-delay="100">
                         <h3 class="value-title">Brand Assets</h3>
                         <p class="value-desc">Download high-resolution logos, product images, and brand guidelines.</p>
-                        <a href="#" class="btn btn-outline" style="margin-top: 15px; display: inline-block;">Download ZIP</a>
+                        <a href="#" class="btn btn-outline" style="margin-top: 15px; display: inline-block;">Download
+                            ZIP</a>
                     </div>
-                    
-                    <div class="value-card">
+
+                    <div class="value-card animate-scale" data-delay="200">
                         <h3 class="value-title">Press Kit</h3>
                         <p class="value-desc">Company fact sheet, executive bios, and key milestones in PDF format.</p>
-                        <a href="#" class="btn btn-outline" style="margin-top: 15px; display: inline-block;">Download PDF</a>
+                        <a href="#" class="btn btn-outline" style="margin-top: 15px; display: inline-block;">Download
+                            PDF</a>
                     </div>
-                    
-                    <div class="value-card">
+
+                    <div class="value-card animate-scale" data-delay="300">
                         <h3 class="value-title">Media Contact</h3>
                         <p class="value-desc">For press inquiries, interview requests, or samples for review.</p>
                         <p class="value-desc" style="margin-top: 10px; font-weight: 600;">press@verdegold.com</p>
                     </div>
-                    
-                    <div class="value-card">
+
+                    <div class="value-card animate-scale" data-delay="400">
                         <h3 class="value-title">Product Samples</h3>
                         <p class="value-desc">Qualified media can request product samples for review purposes.</p>
-                        <a href="contact.html" class="btn btn-outline" style="margin-top: 15px; display: inline-block;">Request Samples</a>
+                        <a href="contact.html" class="btn btn-outline"
+                            style="margin-top: 15px; display: inline-block;">Request Samples</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer (Same as index.html) -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -192,7 +217,7 @@
                         <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3 class="footer-title">Shop</h3>
                     <a href="products.html" class="footer-link">Jasmine Rice</a>
@@ -200,7 +225,7 @@
                     <a href="products.html" class="footer-link">Beverages</a>
                     <a href="products.html" class="footer-link">Seasonings</a>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3 class="footer-title">Company</h3>
                     <a href="about.html" class="footer-link">About Us</a>
@@ -208,7 +233,7 @@
                     <a href="press.html" class="footer-link">Press</a>
                     <a href="contact.html" class="footer-link">Contact</a>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3 class="footer-title">Contact</h3>
                     <p class="footer-contact">
@@ -222,7 +247,7 @@
                     </p>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2023 VerdeGold. All rights reserved.</p>
                 <div class="footer-links">
@@ -234,31 +259,7 @@
         </div>
     </footer>
 
-    <!-- Cart Sidebar (Same as index.html) -->
-    <div class="cart-sidebar" id="cartSidebar">
-        <div class="cart-header">
-            <h3>Your Cart</h3>
-            <button class="cart-close" id="cartClose">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div class="cart-items" id="cartItems">
-            <div class="cart-empty" id="cartEmpty">
-                <i class="fas fa-shopping-cart"></i>
-                <p>Your cart is empty</p>
-            </div>
-        </div>
-        <div class="cart-footer">
-            <div class="cart-total">
-                <span>Total:</span>
-                <span id="cartTotal">$0.00</span>
-            </div>
-            <button class="btn btn-primary btn-checkout">Checkout</button>
-        </div>
-    </div>
-    
-    <div class="cart-overlay" id="cartOverlay"></div>
-
     <script src="script.js"></script>
 </body>
+
 </html>
