@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerdeGold | Premium Gourmet Foods</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌾</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌾</span>
+                <span class="logo-text">Verde<span class="gold">Gold</span></span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="press.html" class="nav-link">Press</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mobile-link active">Home</a>
+        <a href="about.html" class="mobile-link">About Us</a>
+        <a href="services.html" class="mobile-link">Services</a>
+        <a href="products.html" class="mobile-link">Products</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="press.html" class="mobile-link">Press</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Elevate Your Table with <span class="gold">Gold</span> Standard <span class="green">Green</span> Products</h1>
+            <p class="hero-subtitle">Premium Jasmine Rice, Organic Dried Fruits, Artisan Beverages & Seasonings</p>
+            <div class="hero-buttons">
+                <a href="products.html" class="btn btn-primary">Shop Now</a>
+                <a href="about.html" class="btn btn-outline">Our Story</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-container">
+                <div class="floating-img img1">
+                    <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Jasmine Rice">
+                    <div class="img-label">Jasmine Rice</div>
+                </div>
+                <div class="floating-img img2">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Dried Fruits">
+                    <div class="img-label">Dried Fruits</div>
+                </div>
+                <div class="floating-img img3">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1257&q=80" alt="Beverages">
+                    <div class="img-label">Beverages</div>
+                </div>
+                <div class="floating-img img4">
+                    <img src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Seasonings">
+                    <div class="img-label">Seasonings</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-subtitle">Discover our premium selection</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-badge">Best Seller</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Premium Jasmine Rice">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Royal Jasmine Rice</h3>
+                        <p class="product-desc">Aromatic long-grain rice with a delicate floral scent</p>
+                        <div class="product-footer">
+                            <span class="product-price">$12.99</span>
+                            <button class="btn-add-to-cart" data-product="Royal Jasmine Rice" data-price="12.99">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1615485500607-1758f56c0c8d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Tropical Dried Fruit Mix">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Tropical Dried Fruit Mix</h3>
+                        <p class="product-desc">Organic mango, pineapple, papaya and banana</p>
+                        <div class="product-footer">
+                            <span class="product-price">$9.99</span>
+                            <button class="btn-add-to-cart" data-product="Tropical Dried Fruit Mix" data-price="9.99">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Golden Turmeric Elixir">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Golden Turmeric Elixir</h3>
+                        <p class="product-desc">Anti-inflammatory wellness drink with black pepper</p>
+                        <div class="product-footer">
+                            <span class="product-price">$8.99</span>
+                            <button class="btn-add-to-cart" data-product="Golden Turmeric Elixir" data-price="8.99">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1600952844268-4d4d0d5d8d7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Signature Seasoning Blend">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Signature Seasoning Blend</h3>
+                        <p class="product-desc">Perfect balance of herbs, spices and Himalayan salt</p>
+                        <div class="product-footer">
+                            <span class="product-price">$7.99</span>
+                            <button class="btn-add-to-cart" data-product="Signature Seasoning Blend" data-price="7.99">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="products.html" class="btn btn-secondary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section values-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Values</h2>
+                <p class="section-subtitle">What makes VerdeGold special</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="value-title">100% Organic</h3>
+                    <p class="value-desc">All our products are certified organic and sustainably sourced.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="value-title">Carbon Neutral Delivery</h3>
+                    <p class="value-desc">We offset the carbon footprint of every order we ship.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="value-title">Health Focused</h3>
+                    <p class="value-desc">Products designed to nourish your body and delight your taste buds.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3 class="value-title">Eco Packaging</h3>
+                    <p class="value-desc">All packaging is 100% recyclable or compostable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Join the VerdeGold Community</h2>
+                <p class="newsletter-subtitle">Get 15% off your first order + exclusive recipes & wellness tips</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                    <p class="form-note">By subscribing you agree to our Privacy Policy</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🌾</span>
+                        <span class="logo-text">Verde<span class="gold">Gold</span></span>
+                    </a>
+                    <p class="footer-desc">Premium gourmet foods that elevate your cooking and nourish your body.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Shop</h3>
+                    <a href="products.html" class="footer-link">Jasmine Rice</a>
+                    <a href="products.html" class="footer-link">Dried Fruits</a>
+                    <a href="products.html" class="footer-link">Beverages</a>
+                    <a href="products.html" class="footer-link">Seasonings</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Company</h3>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="services.html" class="footer-link">Services</a>
+                    <a href="press.html" class="footer-link">Press</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact</h3>
+                    <p class="footer-contact">
+                        <i class="fas fa-map-marker-alt"></i> 123 Gourmet Avenue, San Francisco, CA 94107
+                    </p>
+                    <p class="footer-contact">
+                        <i class="fas fa-phone"></i> (555) 123-4567
+                    </p>
+                    <p class="footer-contact">
+                        <i class="fas fa-envelope"></i> hello@verdegold.com
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 VerdeGold. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" id="cartClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here dynamically -->
+            <div class="cart-empty" id="cartEmpty">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-checkout">Checkout</button>
+        </div>
+    </div>
+    
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | VerdeGold</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌾</text></svg>">
+</head>
+<body>
+    <!-- Navigation (Same as index.html) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌾</span>
+                <span class="logo-text">Verde<span class="gold">Gold</span></span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="press.html" class="nav-link">Press</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (Same as index.html) -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="about.html" class="mobile-link">About Us</a>
+        <a href="services.html" class="mobile-link">Services</a>
+        <a href="products.html" class="mobile-link active">Products</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="press.html" class="mobile-link">Press</a>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Explore our premium selection of Jasmine rice, dried fruits, beverages, and seasonings.</p>
+        </div>
+    </section>
+
+    <!-- Products Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Product Filters -->
+            <div class="content-card">
+                <div class="filter-buttons" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 30px;">
+                    <button class="btn filter-btn active" data-filter="all">All Products</button>
+                    <button class="btn btn-outline filter-btn" data-filter="rice">Jasmine Rice</button>
+                    <button class="btn btn-outline filter-btn" data-filter="fruit">Dried Fruits</button>
+                    <button class="btn btn-outline filter-btn" data-filter="beverage">Beverages</button>
+                    <button class="btn btn-outline filter-btn" data-filter="seasoning">Seasonings</button>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Rice Products -->
+                    <div class="product-card" data-category="rice">
+                        <div class="product-badge">Best Seller</div>
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80" alt="Premium Jasmine Rice">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Royal Jasmine Rice</h3>
+                            <p class="product-desc">Aromatic long-grain rice with a delicate floral scent, perfect for Asian dishes.</p>
+                            <div class="product-footer">
+                                <span class="product-price">$12.99</span>
+                                <button class="btn-add-to-cart" data-product="Royal Jasmine Rice" data-price="12.99">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="rice">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1516684732162-798a0062be99?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Black Jasmine Rice">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Black Jasmine Rice</h3>
+                            <p class="product-desc">Nutrient-rich heirloom variety with a nutty flavor and striking color.</p>
+                            <div class="product-footer">
+                                <span class="product-price">$15.99</span>
+                                <button class="btn-add-to-cart" data-product="Black Jasmine Rice" data-price="15.99">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Dried Fruit Products -->
+                    <div class="product-card" data-category="fruit">
+                        <div class="product-badge">New</div>
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1615485500607-1758f56c0c8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Tropical Dried Fruit Mix">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Tropical Dried Fruit Mix</h3>
+                            <p class="product-desc">Organic mango, pineapple, papaya and banana, no added sugar.</p>
+                            <div class="product-footer">
+                                <span class="product-price">$9.99</span>
+                                <button class="btn-add-to-cart" data-product="Tropical Dried Fruit Mix" data-price="9.99">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="fruit">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=1092&q=80" alt="Mediterranean Apricots">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Mediterranean Apricots</h3>
+                            <p class="product-desc">Sun-dried Turkish apricots, naturally sweet and rich in fiber.</p>
+                            <div class="product-footer">
+                                <span class="product-price">$11.99</span>
+                                <button class="btn-add-to-cart" data-product="Mediterranean Apricots" data-price="11.99">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Beverage Products -->
+                    <div class="product-card" data-category="beverage">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" alt="Golden Turmeric Elixir">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Golden Turmeric Elixir</h3>
+                            <p class="product-desc">Anti-inflammatory wellness drink with black pepper for absorption.</p>
+                            <div class="product-footer">
+                                <span class="product-price">$8.99</span>
+                                <button class="btn-add-to-cart" data-product="Golden Turmeric Elixir" data-price="8.99">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="beverage">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80" alt="Jasmine Green Tea">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Jasmine Green Tea</h3>
+                            <p class="product-desc">Premium loose-leaf tea scented with fresh jasmine flowers.</p>
+                            <div class="product-footer">
+                                <span class="product-price">$14.99</span>
+                                <button class="btn-add-to-cart" data-product="Jasmine Green Tea" data-price="14.99">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Seasoning Products -->
+                    <div class="product-card" data-category="seasoning">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1600952844268-4d4d0d5d8d7c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Signature Seasoning Blend">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Signature Seasoning Blend</h3>
+                            <p class="product-desc">Perfect balance of herbs, spices and Himalayan salt.</p>
+                            <div class="product-footer">
+                                <span class="product-price">$7.99</span>
+                                <button class="btn-add-to-cart" data-product="Signature Seasoning Blend" data-price="7.99">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="seasoning">
+                        <div class="product-badge">Limited</div>
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=1071&q=80" alt="Truffle Salt">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Black Truffle Salt</h3>
+                            <p class="product-desc">Italian sea salt infused with real black summer truffle.</p>
+                            <div class="product-footer">
+                                <span class="product-price">$24.99</span>
+                                <button class="btn-add-to-cart" data-product="Black Truffle Salt" data-price="24.99">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Bundles -->
+            <div class="content-card">
+                <h2>Special Bundles</h2>
+                <p style="margin-bottom: 30px;">Save when you buy these curated product combinations.</p>
+                
+                <div class="products-grid">
+                    <div class="product-card bundle-card">
+                        <div class="product-badge">Save 15%</div>
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1169&q=80" alt="Asian Cooking Bundle">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Asian Cooking Bundle</h3>
+                            <p class="product-desc">Royal Jasmine Rice + Signature Seasoning Blend + Jasmine Green Tea</p>
+                            <div class="product-footer">
+                                <span class="product-price"><s>$35.97</s> $30.57</span>
+                                <button class="btn-add-to-cart" data-product="Asian Cooking Bundle" data-price="30.57">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card bundle-card">
+                        <div class="product-badge">Save 20%</div>
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Wellness Bundle">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Wellness Bundle</h3>
+                            <p class="product-desc">Golden Turmeric Elixir + Mediterranean Apricots + Black Jasmine Rice</p>
+                            <div class="product-footer">
+                                <span class="product-price"><s>$36.97</s> $29.58</span>
+                                <button class="btn-add-to-cart" data-product="Wellness Bundle" data-price="29.58">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🌾</span>
+                        <span class="logo-text">Verde<span class="gold">Gold</span></span>
+                    </a>
+                    <p class="footer-desc">Premium gourmet foods that elevate your cooking and nourish your body.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Shop</h3>
+                    <a href="products.html" class="footer-link">Jasmine Rice</a>
+                    <a href="products.html" class="footer-link">Dried Fruits</a>
+                    <a href="products.html" class="footer-link">Beverages</a>
+                    <a href="products.html" class="footer-link">Seasonings</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Company</h3>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="services.html" class="footer-link">Services</a>
+                    <a href="press.html" class="footer-link">Press</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact</h3>
+                    <p class="footer-contact">
+                        <i class="fas fa-map-marker-alt"></i> 123 Gourmet Avenue, San Francisco, CA 94107
+                    </p>
+                    <p class="footer-contact">
+                        <i class="fas fa-phone"></i> (555) 123-4567
+                    </p>
+                    <p class="footer-contact">
+                        <i class="fas fa-envelope"></i> hello@verdegold.com
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 VerdeGold. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar (Same as index.html) -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" id="cartClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty" id="cartEmpty">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-checkout">Checkout</button>
+        </div>
+    </div>
+    
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

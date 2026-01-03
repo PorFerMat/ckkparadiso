@@ -1,0 +1,35 @@
+# Simple .gitignore for VerdeGold static website
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS generated files
+ehthumbs.db
+Thumbs.db
+
+# User uploaded content (if any)
+/uploads/
+/images/user-uploads/
+
+# Cache files
+.cache/
+
+# Environment files (if you add them later)
+.env
+.env.local
+
+# Log files (if any)
+*.log
