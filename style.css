@@ -188,6 +188,20 @@ h4 {
     color: var(--primary-green);
 }
 
+.logo-img {
+    height: 40px;
+    /* Adjust as needed */
+    width: auto;
+    display: block;
+}
+
+/* Or if using the alternative: */
+.logo-image {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
 .logo-icon {
     font-size: 2rem;
     margin-right: 10px;
