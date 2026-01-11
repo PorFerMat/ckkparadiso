@@ -118,10 +118,17 @@ function initScrollAnimations() {
                     }, 300);
                 }
 
+                // Update this section in your initScrollAnimations function:
+
                 // If element has counter, animate it
                 const counters = entry.target.querySelectorAll('.stat-number, .growth-number, .percentage');
                 counters.forEach(counter => {
                     if (!counter.hasAttribute('data-counted')) {
+                        // Skip elements with dash in their text (ranges)
+                        if (counter.textContent.includes('-') && counter.textContent.includes('$')) {
+                            counter.setAttribute('data-counted', 'true');
+                            return; // Skip animation for ranges
+                        }
                         animateCounter(counter);
                         counter.setAttribute('data-counted', 'true');
                     }
